@@ -1,8 +1,8 @@
 # hassio-addons
 
-## letsdnsocloud
-  - Custom Domain with Cloudflare DNS hosting, DDNS and Let's Encrypt
-
+## DNS-CloudFlare
+  - Custom Domain with Cloudflare DNS hosting and DDNS
+  - Big thanks to https://github.com/PhrantiK/hassio-addons for the first letsdnscloud that I have used for my own purposes
 ***
 
 ### Installation instructions:
