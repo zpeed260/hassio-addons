@@ -1,18 +1,12 @@
-# letsdnsocloud
+# DNS-CloudFlare
 
-## Hass.io Custom Domain with free CloudFlare DNS hosting, DDNS and Let's Encrypt (DNS Challenge)
-
-Use a custom domain with Let's Encrypt on Hass.io without having to open any port to the world.
+## Hass.io Custom Domain with free CloudFlare DNS hosting and DDNS
 
 ### Features:
 
 * Automatic A record creation with current IP.
 * Domain or Subdomain supported.
 * Dynamic DNS using the CloudFlare API, monitors changes and updates IP every 5 mins.
-* Let's Encrypt certificate generation via DNS Challenge.
-* Automatic DNS Challenge TXT record generation & cleanup.
-
-&nbsp;&nbsp;&nbsp;&nbsp;_Note: Only tested with single domain. Will remove domain array or update for multiple domains in future_
 
 ## Quick & Dirty get started guide:
 
@@ -35,7 +29,7 @@ Use a custom domain with Let's Encrypt on Hass.io without having to open any por
 ### 4. Hass.io config
   - Install plugin using /addons directory or GIT
   - Edit config with your CloudFlare Global API Key, your CloudFlare email address and domain.
-  - Hit start and wait for it to create the certificates.
+  - Hit start and wait.
 
 ### 4. Homeassistant config
   - Add the following to your configuration.yaml:
@@ -54,5 +48,7 @@ Use a custom domain with Let's Encrypt on Hass.io without having to open any por
 ***
 Credits & Thanks:
 _Let's Encrypt DNS Challenge code based on the Duckdns addon:_
-
 https://github.com/home-assistant/hassio-addons/tree/master/duckdns
+Whole adon based on PhrantiK addon for LetsDNS Cloud
+https://github.com/PhrantiK/hassio-addons
+
