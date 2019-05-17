@@ -2,13 +2,15 @@
 
 ## Hass.io Custom Domain with free CloudFlare DNS hosting and DDNS
 
+For use in conjunction with the nginx proxy manager to manage your DNS and sub domains via CloudFlare
+
 ### Features:
 
 * Automatic A record creation with current IP.
 * Domain or Subdomain supported.
 * Dynamic DNS using the CloudFlare API, monitors changes and updates IP every 5 mins.
 
-## Quick & Dirty get started guide:
+## Guide:
 
 ### 1. CloudFlare
   - Sign up for free account.
@@ -19,28 +21,24 @@
 
 ### 2. Domain Registrar
   - Change nameservers for your domain to point to Cloudflare.
-
-### 3. Nginx Proxy manager
- - Setup Nginx Proxy manager - https://github.com/hassio-addons/addon-nginx-proxy-manager
   
-### 4. Hass.io config
+### 3. Hass.io config
   - Install plugin using /addons directory or GIT
   - Edit config with your CloudFlare Global API Key, your CloudFlare email address and domain.
   - Hit start and wait.
+  - Review logs to see up address record
+
+### 4. Nginx Proxy manager
+ - Install and Setup Nginx Proxy manager - https://github.com/hassio-addons/addon-nginx-proxy-manager
 
 ### 4. Homeassistant config
   - Add the following to your configuration.yaml:
 ```
   http:
-    base_url: https://your.domain.com:portnumber
-    ssl_certificate: /ssl/fullchain.pem
-    ssl_key: /ssl/privkey.pem
+    base_url: https://your.domain.com
     ip_ban_enabled: true
     login_attempts_threshold: 5
 ```
-
-### 5. Restart homeassistant
-  - Profit.
 
 ***
 Credits & Thanks:
