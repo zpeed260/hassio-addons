@@ -1,7 +1,7 @@
 {
-	"name": "DNS-Cloudflare",
+	"name": "dns-cloudflare",
 	"version": "1.0",
-	"slug": "DNS-Cloudflare",
+	"slug": "dns-cloudflare",
 	"description": "Custom Domain with Cloudflare DNS hosting and DDNS",
 	"url": "https://github.com/zpeed260/hassio-addons/",
 	"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
